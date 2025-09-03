@@ -10,7 +10,6 @@ std::ostream &operator<<(std::ostream &out, const Record &r) {
 bool operator<(const Record &lhs, const Record &rhs) {
   return lhs.time().str() < rhs.time().str();
 }
-
 Record::Record(const std::string &nm) : str_name(nm) {}
 Record::Record(const std::string &nm, const std::string &tm) : str_name(nm), cls_time(tm) {}
 Record::Record(const std::string &nm, const Time &tm) : str_name(nm), cls_time(tm) {}
